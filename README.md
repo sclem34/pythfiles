@@ -3,11 +3,9 @@
 
 <h2>Description</h2>
 Project Scenario: <br/>
-The research team at my organization needs to update the file permissions for certain files and directories within the projects directory. The permissions do not currently reflect the level of authorization that should be given. Checking and updating these permissions will help keep their system secure. To complete this task, I performed the following tasks:<br />
-- Check file and directory details<br />
-- Change file permissions<br />
-- Change file permissions on a hidden file<br />
-- Change directory permissions <br />
+I'm a security analyst working at a healthcare company. At my organization, access to restricted data containing PHI is controlled with an allow list of IP addresses. I'm required to regularly update a file that identifies the employees who are authorized to access restricted data. The contents of the file are based on who is working with sensitive patient records. Employees are restricted access based on their IP address. There is an allow list for IP addresses permitted to sign into the restricted subnetwork. There's also a remove list that identifies which employees I must remove from this allow list.<br/><br/>
+My task is to create an algorithm that uses Python code to check whether the allow list contains any IP addresses identified on the remove list. If so, I should remove those IP addresses from the file containing the allow list.<br/>
+
 <br />
 
 
