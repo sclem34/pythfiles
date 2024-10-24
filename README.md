@@ -22,8 +22,10 @@ My task is to create an algorithm that uses Python code to check whether the all
 <p align="center">
   <b>Open the file that contains the allow list</b></p>  <br/>
 The following code demonstrates how I used Linux commands to determine the existing permissions set for a specific directory in the file system. <br/><br/>
-<img src="https://i.imghippo.com/files/KEW4013KJk.png"height="80%" width="80%" alt=""/>
-The first line of the screenshot displays the command I entered, and the other lines display the output. The code lists all contents of the projects directory. I used the ls command with the -la option to display a detailed listing of the file contents that also returned hidden files. The output of my command indicates that there is one directory named drafts, one hidden file named .project_x.txt, and five other project files. The 10-character string in the first column represents the permissions set on each file or directory.
+<img src="https://i.imghippo.com/files/wQo3799xBs.png"height="80%" width="80%" alt=""/>
+Then, I used a with statement to open the file:<br/>
+<img src="https://i.imghippo.com/files/wQo3799xBs.png"height="80%" width="80%" alt=""/>
+In my algorithm, the with statement is used with the .open() function in read mode to open the allow list file for the purpose of reading it. The purpose of opening the file is to allow me to access the IP addresses stored in the allow list file. The with keyword will help manage the resources by closing the file after exiting the with statement. In the code with open(import_file, "r") as file:, the open() function has two parameters. The first identifies the file to import, and then the second indicates what I want to do with the file. In this case, "r" indicates that I want to read it. The code also uses the as keyword to assign a variable named file; file stores the output of the .open() function while I work within the with statement.
 <br />
 <br />
 <p align="center"><b>Describe the permissions string</b>  <br/></p>
